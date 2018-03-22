@@ -14,6 +14,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css' }
     ]
   },
+  router: {
+    linkActiveClass: 'is-active'
+  },
   /*
   ** Customize the progress bar color
   */
