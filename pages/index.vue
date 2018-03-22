@@ -1,6 +1,6 @@
 <template>
   <div class="content">
     <h1>Doggo page</h1>
-    <button type="button" name="button" class="button is-medium">Show me doggos</button>
+    <nuxt-link to="/doggos" type="button" name="button" class="button is-medium" href="/doggos">Show me doggos</nuxt-link>
   </div>
 </template>
