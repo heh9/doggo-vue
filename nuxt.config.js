@@ -17,6 +17,9 @@ module.exports = {
   router: {
     linkActiveClass: 'is-active'
   },
+  api: {
+    baseURL: 'https://dog.ceo/api'
+  },
   /*
   ** Customize the progress bar color
   */
