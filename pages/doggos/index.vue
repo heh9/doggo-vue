@@ -17,16 +17,14 @@
 </template>
 
 <script>
-import axios from 'axios';
-
-const toFirstUpperCase = (str) => {
-  return str[0].toUpperCase() + str.substr(1);
-};
-
 export default {
-  async asyncData() {
-    const { data } = await axios.get('https://dog.ceo/api/breeds/list');
-    return { breeds: data.message.map(toFirstUpperCase) };
+  async fetch ({store}) {
+    await store.dispatch('getBreeds');
+  },
+  computed: {
+    breeds () {
+      return this.$store.state.breeds;
+    }
   }
 }
 </script>
